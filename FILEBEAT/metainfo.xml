@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metainfo> 
+  <schemaVersion>2.0</schemaVersion>  
+  <services> 
+    <service> 
+      <name>FILEBEAT</name>  
+      <displayName>FileBeat</displayName>  
+      <comment>Filebeat is an open source file harvester, mostly used to fetch logs files and feed them into logstash. Together with the libbeat lumberjack output is a replacement for logstash-forwarder.</comment>  
+      <version>5.4.3</version>  
+      <components> 
+        <component> 
+          <name>FileBeat</name>  
+          <displayName>FileBeat</displayName>  
+          <category>MASTER</category>  
+          <cardinality>1</cardinality>  
+          <timelineAppid>FILEBEAT</timelineAppid>  
+          <commandScript> 
+            <script>scripts/filebeat.py</script>
+            <scriptType>PYTHON</scriptType>  
+            <timeout>600</timeout> 
+          </commandScript> 
+        </component> 
+      </components>  
+      <osSpecifics> 
+        <osSpecific> 
+          <osFamily>any</osFamily> 
+        </osSpecific> 
+      </osSpecifics> 
+    </service> 
+  </services> 
+</metainfo>
+

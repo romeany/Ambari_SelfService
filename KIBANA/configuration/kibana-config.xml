@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+       http://www.apache.org/licenses/LICENSE-2.0
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<configuration supports_final="true">
+
+    <!-- Port -->
+    <property>
+        <name>server.port</name>
+        <value>5601</value>
+        <description> Kibana is served by a back end server. This setting specifies the port to use.</description>
+    </property>
+
+    <!-- Host -->
+    <property>
+        <name>server.host</name>
+        <value>localhost</value>
+        <description>Specifies the address to which the Kibana server will bind. IP addresses and host names are both valid values.</description>
+    </property>
+
+
+    <!-- Server Name -->
+    <property>
+        <name>server.name</name>
+        <value>localhost</value>
+        <description>The Kibana server's name.  This is used for display purposes.</description>
+    </property>
+
+    <!--elasticsearch-->
+    <property>
+        <name>elasticsearch.url</name>
+        <value>http://127.0.0.1:9200</value>
+        <description>The URL of the Elasticsearch instance to use for all your queries.</description>
+    </property>
+
+
+</configuration>

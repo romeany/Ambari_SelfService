@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metainfo> 
+  <schemaVersion>2.0</schemaVersion>  
+  <services> 
+    <service> 
+      <name>KIBANA</name>
+      <displayName>Kibana</displayName>
+      <comment>Kibana is your window into the Elastic Stack. Specifically, it's an open source (Apache Licensed), browser-based analytics and search dashboard for Elasticsearch.</comment>
+      <version>5.4.3</version>  
+      <components> 
+        <component> 
+          <name>Kibana</name>
+          <displayName>Kibana</displayName>
+          <category>MASTER</category>  
+          <cardinality>1</cardinality>  
+          <timelineAppid>KIBANA</timelineAppid>
+          <commandScript> 
+            <script>scripts/kibana.py</script>
+            <scriptType>PYTHON</scriptType>  
+            <timeout>600</timeout> 
+          </commandScript> 
+        </component> 
+      </components>  
+      <osSpecifics> 
+        <osSpecific> 
+          <osFamily>any</osFamily> 
+        </osSpecific> 
+      </osSpecifics> 
+    </service> 
+  </services> 
+</metainfo>
+

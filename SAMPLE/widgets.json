@@ -1,0 +1,35 @@
+{
+    "layouts": [
+        {
+            "layout_name": "default_sample_dashboard", 
+            "display_name": "Standard TEST Dashboard", 
+            "section_name": "SAMPLE_SUMMARY", 
+            "widgetLayoutInfo": [
+                {
+                    "widget_name": "test_widget", 
+                    "description": "test widget", 
+                    "widget_type": "GRAPH", 
+                    "is_visible": true, 
+                    "metrics": [
+                        {
+                            "name": "test1", 
+                            "metric_path": "metrics/test1", 
+                            "service_name": "SAMPLE", 
+                            "component_name": "MY_MASTER"
+                        }
+                    ], 
+                    "values": [
+                        {
+                            "name": "test1", 
+                            "value": "${test1}"
+                        }
+                    ], 
+                    "properties": {
+                        "graph_type": "LINE", 
+                        "time_range": "1"
+                    }
+                }
+            ]
+        }
+    ]
+}

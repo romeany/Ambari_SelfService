@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<metainfo> 
+  <schemaVersion>2.0</schemaVersion>  
+  <services> 
+    <service> 
+      <name>SAMPLE</name>  
+      <displayName>my sample</displayName>  
+      <comment>Service definition for sample</comment>  
+      <version>1.0</version>  
+      <components> 
+        <component> 
+          <name>MY_MASTER</name>  
+          <displayName>My Master</displayName>  
+          <category>MASTER</category>  
+          <cardinality>1</cardinality>  
+          <timelineAppid>sample</timelineAppid>  
+          <commandScript> 
+            <script>scripts/master.py</script>  
+            <scriptType>PYTHON</scriptType>  
+            <timeout>600</timeout> 
+          </commandScript> 
+        </component> 
+      </components>  
+      <osSpecifics> 
+        <osSpecific> 
+          <osFamily>any</osFamily> 
+        </osSpecific> 
+      </osSpecifics> 
+    </service> 
+  </services> 
+</metainfo>
+

@@ -1,0 +1,33 @@
+{
+    "MY_MASTER": {
+        "Component": [
+            {
+                "type": "ganglia",
+                "metrics": {
+                    "default": {
+                        "metrics/test1": {
+                            "metric": "test1",
+                            "pointInTime": true,
+                            "temporal": true
+                        },
+                        "metrics/test2": {
+                            "metric": "test2",
+                            "pointInTime": true,
+                            "temporal": true
+                        },
+                        "metrics/test3": {
+                            "metric": "test3",
+                            "pointInTime": true,
+                            "temporal": true
+                        },
+                        "metrics/test4": {
+                            "metric": "test4",
+                            "pointInTime": true,
+                            "temporal": true
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,1 +1,1 @@
-# Ambari_SelfService
+##Amabri集成管理第三方服务方法，示例包括elasticsearch、filebeat、kibana、logstash、redis和Cassandra等。
